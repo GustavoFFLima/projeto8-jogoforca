@@ -1,32 +1,32 @@
 export default function Letras(){
     return(
         <div>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
+            <button data-test="letter"></button>
         </div>
     )
 }

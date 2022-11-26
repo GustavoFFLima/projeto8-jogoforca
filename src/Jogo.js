@@ -3,8 +3,8 @@ export default function Jogo(){
         <div>
             <img data-test="game-image" src="./img/forca0.png" alt="imagem da forca"/>
             <div>
-            <button>Escolher Palavra</button>
-            <h1>_ _ _ _</h1>
+            <button data-test="choose-word">Escolher Palavra</button>
+            <h1 data-test="word" data-answer="">_ _ _ _</h1>
             </div>
         </div>
     )
