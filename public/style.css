@@ -1,0 +1,120 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jogo {
+  display: flex;
+}
+
+.jogo img {
+  width: 400px;
+  height: 466px;
+}
+
+.jogo div {
+  display: column;
+}
+
+.jogo div button {
+  width: 200px;
+  height: 60px;
+  background: #27AE60;
+  border-radius: 8px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.jogo div h1 {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 68px;
+  align-items: center;
+  text-align: center;
+}
+
+.letras {
+  width: 700px;
+}
+
+.letras button {
+  width: 40px;
+  height: 40px;
+  margin: 6px;
+  
+  background: #E1ECF4;
+  border: 1px solid #7AA7C7;
+  border-radius: 3px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+
+  color: #39739D;
+}
+
+.letraSelecionada {
+  background: #9FAAB5;
+  color: #798A9F;
+}
+
+.chute {
+  width: 600px;
+}
+
+.chute p {
+  display: block;
+  margin: 12px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.chute input {
+  width: 353px;
+  height: 40px;
+  
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.chute button {
+  width: 100px;
+  height: 40px;
+  margin: 13px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+  color: #3C76A1;
+}
+
+.palavraErrada {
+  color: #FF0000;
+}
+
+.palavraCerta {
+  color: #27AE60;
+}
