@@ -1,16 +1,19 @@
-export default function Letras(){
-    const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+// import Jogo from "./Jogo"
 
-    return(
-        <div className="letras">
-            <button onClick={test} data-test="letter" disabled>A</button>
-            <button onClick={test} data-test="letter">B</button>
-            <button data-test="letter">C</button>
-            <button data-test="letter">D</button>
-        </div>
-    )
-}
 
-function test () {
-    console.log("ok")
-}
+// const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+// export default function Letras(){
+
+//     function checaAcerto (selecionada) {
+//         if(revelando.indexOf(selecionada.value)){
+            
+//         }
+//     }
+
+//     return(
+//         <div className="letras">
+// 			{alfabeto.map(alfabeto => <button key={Math.random()} onClick={() => checaAcerto(selecionada)} data-test="letter" >{alfabeto.toUpperCase()}</button>)}
+//         </div>
+//     )
+// }
