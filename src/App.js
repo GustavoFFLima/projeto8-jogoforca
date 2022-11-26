@@ -1,8 +1,13 @@
+import Jogo from "./Jogo"
+import Letras from "./Letras"
+import Chute from "./Chute"
 
 function App() {
   return (
     <>
-      <h1>Projeto8-jogoforca</h1>
+      <Jogo />
+      <Letras />
+      <Chute />
     </>
   );
 }
