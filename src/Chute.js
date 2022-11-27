@@ -8,4 +8,4 @@ export default function Chute(){
             <button data-test="guess-input" >Chutar</button>
         </div>
     )
-};
+}
