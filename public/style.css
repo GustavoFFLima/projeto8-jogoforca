@@ -1,3 +1,8 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -5,25 +10,30 @@
 }
 
 .jogo {
+  position: relative;
+  width: 1025px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .jogo img {
   width: 400px;
   height: 466px;
+  margin: 50px;
 }
 
-.jogo {
-  display: column;
-}
-
-.btn {
+.jogo button {
   position: absolute;
-  right: 150px;
+  top: 0;
+  right: 0;
   width: 200px;
   height: 60px;
   background: #27AE60;
   border-radius: 8px;
+  margin-top: 78px;
+  margin-bottom: 200px;
+  
 
   font-family: 'Roboto';
   font-style: normal;
@@ -35,6 +45,9 @@
 }
 
 .jogo h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
@@ -46,6 +59,7 @@
 
 .letras {
   width: 700px;
+  margin-top: 70px;
 }
 
 .letras button {
@@ -68,18 +82,25 @@
   color: #39739D;
 }
 
+.letras button:disabled{
+  background: #798A9F;
+}
+
 .letraSelecionada {
   background: #9FAAB5;
   color: #798A9F;
 }
 
 .chute {
-  width: 600px;
+  display: flex;
+  width: 700px;
+  margin-top: 40px;
 }
 
 .chute p {
   display: block;
   margin: 12px;
+  margin-top: 20px;
   
   font-family: 'Roboto';
   font-style: normal;
@@ -91,6 +112,7 @@
 .chute input {
   width: 353px;
   height: 40px;
+  margin-top: 13px;
   
   background: #FFFFFF;
   border: 1px solid #CCCCCC;
