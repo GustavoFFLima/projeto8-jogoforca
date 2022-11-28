@@ -7,7 +7,9 @@ import palavras from "./palavras"
 function App() {
   let palavraSortiada = ""
   let palavraocultada = []
+  let letraClicada = []
 
+  const [desabilitar, setDesabilitar] = useState(true)
   const [revelando, setrevelando] = useState(palavraSortiada)
   const [arrayPalavraSortiada, setArrayPalavraSortiada] = useState([])
   const [quantidadeErros, setQuantidadeErros] = useState(0)
@@ -16,10 +18,21 @@ function App() {
   function sortiarPalavra(){
       palavraSortiada = palavras[parseInt(Math.random() * palavras.length)]
       setArrayPalavraSortiada([...palavraSortiada])
-      palavraocultada = arrayPalavraSortiada.map(ocultarPalavra)
+      palavraocultada = [...palavraSortiada].map(ocultarPalavra)
       console.log(palavraocultada)
       setrevelando(palavraocultada)
-      console.log(arrayPalavraSortiada)
+      setDesabilitar(false)
+  }
+
+  function letraFoiClicada(letra){
+    if(!letraClicada.includes(letra)){
+      letraClicada.push(letra)
+      let i = arrayPalavraSortiada.indexOf(letra)
+      if(i !== -1){
+        palavraocultada[i] = letra
+        setrevelando(palavraocultada)
+      }
+    }
   }
 
   function ocultarPalavra(){
@@ -30,7 +43,6 @@ function App() {
     for(let i = 0; i < arrayPalavraSortiada.length; i++){
       if(letra === arrayPalavraSortiada[i]){
         palavraocultada[i] = letra
-        console.log(palavraocultada)
       }
     }
   }
@@ -38,15 +50,16 @@ function App() {
   function errouLetra(){
     if(quantidadeErros <= 6){
       setQuantidadeErros(quantidadeErros + 1)
-      console.log(quantidadeErros)
       setErrou(`./img/forca${quantidadeErros}.png`)
+    } else {
+      setDesabilitar(true)
     }
   }
 
   return (
     <>
       <Jogo revelando={revelando} sortiarPalavra={sortiarPalavra} errou={errou}/>
-      <Letras arrayPalavraSortiada={arrayPalavraSortiada} errouLetra={errouLetra} acertouLetra={acertouLetra}/>
+      <Letras arrayPalavraSortiada={arrayPalavraSortiada} letraFoiClicada={letraFoiClicada} errouLetra={errouLetra} acertouLetra={acertouLetra} desabilitar={desabilitar}/>
       <Chute />
     </>
   );
